@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'GothamRnd-Book';
+    src: url('../fonts/GothamRnd-Book.eot');
+    src: url('../fonts/GothamRnd-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamRnd-Book.woff2') format('woff2'),
+        url('../fonts/GothamRnd-Book.woff') format('woff'),
+        url('../fonts/GothamRnd-Book.ttf') format('truetype'),
+        url('../fonts/GothamRnd-Book.svg#GothamRnd-Book') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamRnd-Light';
+    src: url('../fonts/GothamRnd-Light.eot');
+    src: url('../fonts/GothamRnd-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamRnd-Light.woff2') format('woff2'),
+        url('../fonts/GothamRnd-Light.woff') format('woff'),
+        url('../fonts/GothamRnd-Light.ttf') format('truetype'),
+        url('../fonts/GothamRnd-Light.svg#GothamRnd-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamRnd-Bold';
+    src: url('../fonts/GothamRnd-Bold.eot');
+    src: url('../fonts/GothamRnd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamRnd-Bold.woff2') format('woff2'),
+        url('../fonts/GothamRnd-Bold.woff') format('woff'),
+        url('../fonts/GothamRnd-Bold.ttf') format('truetype'),
+        url('../fonts/GothamRnd-Bold.svg#GothamRnd-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamRnd-Medium';
+    src: url('../fonts/GothamRnd-Medium.eot');
+    src: url('../fonts/GothamRnd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamRnd-Medium.woff2') format('woff2'),
+        url('../fonts/GothamRnd-Medium.woff') format('woff'),
+        url('../fonts/GothamRnd-Medium.ttf') format('truetype'),
+        url('../fonts/GothamRnd-Medium.svg#GothamRnd-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+

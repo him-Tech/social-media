@@ -1,0 +1,48 @@
+.footer {
+  padding: 0 0 20px;
+  position: relative;
+  overflow: hidden;
+  background-image: url('../images/abstract-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-inner {
+  position: relative;
+  padding-top: 300px;
+  &:after {
+    content: '';
+    background-image: url('../images/ring-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    width: 87px;
+    height: 75px;
+  }
+}
+
+.footer-left-content {
+  max-width: 340px;
+  .social-list {
+    margin: 0 -8px;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-left-content {
+    max-width: 100%;
+  }
+  .footer {
+    background-image: none;
+    background: linear-gradient(125.37deg, rgba(254, 91, 58, 0.05) 1.26%, rgba(252, 42, 100, 0.05) 118.26%);
+  }
+  .footer-inner {
+    padding-top: 50px;
+    &:after {
+      top: 13px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

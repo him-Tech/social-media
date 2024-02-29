@@ -1,0 +1,1 @@
+sass --watch "/Users/sushanta-mds/Documents/sushanta-personal/personal/social-media/assests/scss/master.scss":"/Users/sushanta-mds/Documents/sushanta-personal/personal/social-media/assests/css/style.css" --style compressed
