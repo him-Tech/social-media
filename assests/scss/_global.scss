@@ -96,6 +96,7 @@ a {
 }
 
 .heading-wrapper {
+  padding-top: 50px;
   .abstract-bg {
     position: relative;
     display: inline-block;
@@ -165,7 +166,12 @@ a {
 }
 
 @media(max-width: 767px) {
+  .text-5xl, h2 {
+    font-size: $fontSize-32 !important;
+    line-height: 41px;
+  }
   .heading-wrapper {
+    padding-top: 0;
     .abstract-bg, .abstract-bg-right {
       &:before {
         display: none;
