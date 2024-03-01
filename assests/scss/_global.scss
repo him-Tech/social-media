@@ -97,6 +97,12 @@ a {
 
 .heading-wrapper {
   padding-top: 50px;
+  .character {
+    background: linear-gradient(135.62deg, $primary 1.06%, $secondary 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
   .abstract-bg {
     position: relative;
     display: inline-block;
@@ -109,6 +115,13 @@ a {
       bottom: 100%;
       left: -42px;
       margin-bottom: -20px;
+    }
+    &.right {
+      &:before {
+        background-image: url('../images/heading-left-abstract2.svg');
+        right: -40px;
+        left: auto;
+      }
     }
   }
   .abstract-bg-right {
@@ -164,6 +177,93 @@ a {
     border-color: rgba($black, 0.16);
   }
 }
+
+.accordion {
+  .accordion-item {
+    border-radius: 6px;
+    border: 1px solid rgba(254, 91, 58, 0.16);
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .accordion-header {
+      .accordion-button {
+        background: transparent;
+        border: none;
+        padding: 12px;
+        color: $black;
+        box-shadow: none;
+        &[aria-expanded="true"] {
+          &:after {
+            background-image: url('../images/minus.svg');
+            background-repeat: no-repeat;
+            width: 12px;
+            height: 3px;
+            background-size: 100%;
+            transition: none
+          }
+        }
+        &[aria-expanded="false"] {
+          &:after {
+            background-image: url('../images/plus.svg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            transition: none;
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+    }
+    .accordion-body {
+      border: 0;
+      color: rgba($black, 0.8);
+      padding: 0 12px 12px;
+    }
+    &:has(.accordion-collapse.show) {
+      box-shadow: 0px 0px 52px rgba(252, 48, 95, 0.16);
+    }
+  }
+
+}
+
+.slider-dots {
+  &.slick-dotted.slick-slider {
+    margin-bottom: 50px;
+  }
+  .slick-dots {
+    bottom: -50px;
+    li {
+      width: auto;
+      height: auto;
+      button {
+        width: 11px;
+        height: 11px;
+        border: 1px solid $primary;
+        background: $white;
+        position: relative;
+        border-radius: 50%;
+        &:before {
+         display: none;
+        }
+      }
+      &.slick-active {
+        button {
+          background: linear-gradient(135.62deg, #FE5B3A 1.06%, #FC2A64 100%);
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .container{
+    max-width: 1140px;
+  }
+}
+
 
 @media(max-width: 767px) {
   .text-5xl, h2 {
