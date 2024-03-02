@@ -105,8 +105,9 @@
     width: 100%;
     left: -100%;
     padding: 15px;
-    height: 100%;
+    height: calc(100% - 60px);
     transition: all 0.4s;
+    overflow-y: auto;
     &.show {
       left: 0;
     }
@@ -118,6 +119,7 @@
       }
       .nav-link {
         padding: 10px 0;
+        display: inline-block;
         &:after {
           transform: none;
           bottom: 0;
@@ -128,6 +130,7 @@
       box-shadow: none;
       .nav-link {
         padding: 6px 12px;
+        display: block;
       }
     }
     .dropend:hover>.dropdown-menu {

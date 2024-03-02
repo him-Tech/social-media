@@ -157,6 +157,7 @@ a {
       color: $white;
       border-color: transparent;
       box-shadow: none;
+      opacity: 0.8;
     }
   }
 }
@@ -357,12 +358,7 @@ a {
   }
 }
 
-
-@media(max-width: 767px) {
-  .text-5xl, h2 {
-    font-size: $fontSize-32 !important;
-    line-height: 41px;
-  }
+@media(max-width: 991px) {
   .heading-wrapper {
     padding-top: 0;
     .abstract-bg, .abstract-bg-right {
@@ -370,5 +366,12 @@ a {
         display: none;
       }
     }
+  }
+}
+
+@media(max-width: 767px) {
+  .text-5xl, h2 {
+    font-size: $fontSize-32 !important;
+    line-height: 38px;
   }
 }
