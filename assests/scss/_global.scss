@@ -324,6 +324,7 @@ a {
         border: 0;
         padding: 0;
         width: 100%;
+        overflow: hidden;
         .dropdown-item {
           padding: 8px 12px;
           &:hover, &.active {

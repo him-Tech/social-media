@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   $(".jsScroll").on('click', function(e) {
     e.preventDefault();
     var hash = this.hash;

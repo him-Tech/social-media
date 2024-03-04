@@ -67,11 +67,55 @@
     .dropdown-menu {
       display: none;
     }
+    .dropdown-toggle {
+      padding-right: 20px;
+      position: relative;
+      &:before {
+        content: '';
+        background-image: url('../images/angle-down.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: absolute;
+        right: 5px;
+        width: 10px;
+        height: 10px;
+        top: 50%;
+        margin-top: -5px;
+        transform: rotate(-91deg);
+      }
+      &:hover {
+        &:before {
+          background-image: url('../images/angle-left-white.svg');
+          transform: none;
+          width: 6px;
+          height: 20px;
+          right: 10px;
+        }
+      }
+    }
+    > .dropdown-toggle {
+      padding-right: 15px;
+      &:before {
+        right: 0px;
+        margin-top: -3px;
+        transform: none;
+      }
+      &:hover {
+        &:before {
+          background-image: url('../images/angle-down.svg');
+          right: 0;
+          width: 10px;
+          height: 10px;
+          margin-top: -3px;
+          transform: none;
+        }
+      }
+    }
     &:hover {
       > .dropdown-menu {
-        display: block;
-        margin-top: 0.125em;
-        margin-left: 0.125em;
+          display: block;
+          margin-top: 0.125em;
+          margin-left: 0.125em;
       }
     }
   }
@@ -190,9 +234,6 @@
             padding-top: 0;
           }
         }
-      }
-      &:has(.accordion-collapse.show) {
-        
       }
     }
   }
