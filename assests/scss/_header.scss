@@ -137,5 +137,64 @@
       position: static;
     }
   }
+
+  .accordion.menu-accordion {
+    .accordion-item {
+      border-radius: 6px;
+      border: 0;
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .accordion-header {
+        .accordion-button {
+          background: transparent;
+          border: none;
+          padding: 12px 0;
+          color: $black;
+          box-shadow: none;
+          &[aria-expanded="true"] {
+            &:after {
+              background-image: url('../images/minus.svg');
+              background-repeat: no-repeat;
+              width: 12px;
+              height: 3px;
+              background-size: 100%;
+              transition: none
+            }
+          }
+          &[aria-expanded="false"] {
+            &:after {
+              background-image: url('../images/plus.svg');
+              background-repeat: no-repeat;
+              background-size: 100%;
+              transition: none;
+              width: 12px;
+              height: 12px;
+            }
+          }
+        }
+      }
+      .accordion-body {
+        border: 0;
+        color: rgba($black, 0.8);
+        padding: 0 0 0 12px;
+        .accordion-header {
+          .accordion-button {
+            padding: 0 0 12px;
+          }
+        }
+        .nav-item {
+          padding: 0;
+          .nav-link {
+            padding-top: 0;
+          }
+        }
+      }
+      &:has(.accordion-collapse.show) {
+        
+      }
+    }
+  }
 }
 

@@ -576,8 +576,29 @@
 }
 @media (max-width: 767px) {
   .service-wrapper {
+    .service-slider {
+      padding: 20px 20px 50px;
+      border: 1px solid rgba(254, 91, 58, 0.16);
+      border-radius: 16px;
+      .slick-list {
+        padding: 0;
+      }
+      &.slider-dots {
+        .slick-dots {
+          bottom: 15px;
+          width: calc(100% - 48px);
+        }
+      }
+    }
+    .service-slider-item {
+      padding: 0;
+    }
     .service-card {
+      background: transparent;
+      border-radius: 0;
       .service-card-inner {
+        border-radius: 0;
+        padding: 0;
         .service-card-details {
           h4 {
             font-size: 20px !important;
@@ -964,6 +985,9 @@
     }
   }
   .blog-item {
+    padding: 20px;
+    border: 1px solid rgba(254,91,58,0.16);
+    border-radius: 16px;
     h5 {
       font-size: 18px !important;
       line-height: 22px;

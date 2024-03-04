@@ -53,7 +53,7 @@ $(document).ready(function() {
         settings: {
           arrows: false,
           slidesToShow: 1,
-          autoplay: true,
+          autoplay: false,
           autoplaySpeed: 2000
         }
       }
